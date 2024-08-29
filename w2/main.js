@@ -21,6 +21,6 @@ const transportationScore = 6;
 const cfpTotal = myHouseMembers + myHouseSize + myFoodChoices + myWaterConsumption + myHouseHoldPurchases + wasteProduced + wasteRecycled + transportationScore;
 // 10. Write JS to update the rendered html (index.html) with total footprint
 
-document.getElementById('cfpTotal').innerHTML = cfpTotal;``
+document.getElementById('cfpTotal').innerHTML = cfpTotal;
 
 
