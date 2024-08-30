@@ -19,3 +19,13 @@ console.log(typeof myVar);
 
 const myHeading = document.querySelector("h1");
 console.log(typeof myHeading);
+
+const myPet = "cat";
+const myPetName = "Monkey";
+const myPetAge = 2;
+
+console.log("I have a " + myPet + " her name is " + myPetName + " and she is " + myPetAge + " years old");
+const outputString = console.log(`I have a ${myPet} her name is ${myPetName} and she is ${myPetAge} years`);
+myHeading.textContent = outputString;
+
+// The error is - missing defer
