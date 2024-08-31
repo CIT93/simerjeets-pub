@@ -56,5 +56,23 @@ let carbonFootprintPoints = 0;
 
 //global scope 
 
+// determineHouseHoldPts(3);
+
+function cfpHouse(houseSize){
+    if (houseSize === "large") {
+        carbonFootprintPoints = carbonFootprintPoints + 10;
+    } else if (houseSize === "medium") {
+        carbonFootprints = carbonFootprintPoints + 7;
+    } else if (houseSize === "small") {
+        carbonFootprintPoints = carbonFootprintPoints + 4;
+    } else if (houseSize === "apartment") {
+        carbonFootprintPoints = carbonFootprintPoints + 2;
+    }
+
+    console.log(
+    `Based on the size of this ${houseSize} house the points would be ${carbonFootprintPoints}`
+    )
+}
 
 determineHouseHoldPts(3);
+cfpHouse("apartment");
