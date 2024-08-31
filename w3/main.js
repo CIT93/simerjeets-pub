@@ -1,4 +1,4 @@
-const myName = "Simer Singh";
+/* const myName = "Simer Singh";
 const myAge = 20;
 
 const jsIsWeird = myName + myAge;
@@ -28,4 +28,33 @@ console.log("I have a " + myPet + " her name is " + myPetName + " and she is " +
 const outputString = console.log(`I have a ${myPet} her name is ${myPetName} and she is ${myPetAge} years`);
 myHeading.textContent = outputString;
 
-// The error is - missing defer
+The error is - missing defer */
+
+function determineHouseHoldPts(numberInHousehold) {
+  // console.log("inside the function");
+
+  if (numberInHousehold === 1) {
+    carbonFootprintPoints = carbonFootprintPoints + 14;
+  } else if (numberInHousehold === 2) {
+    carbonFootprintPoints = carbonFootprintPoints + 12;
+  } else if (numberInHousehold === 3) {
+    carbonFootprintPoints = carbonFootprintPoints + 10;
+  } else if (numberInHousehold === 4) {
+    carbonFootprintPoints = carbonFootprintPoints + 8;
+  } else if (numberInHousehold === 5) {
+    carbonFootprintPoints = carbonFootprintPoints + 6;
+  } else if (numberInHousehold > 5)
+    carbonFootprintPoints = carbonFootprintPoints + 2;
+
+  console.log(
+    `Based on the number of members of the household of ${numberInHousehold} the points would be ${carbonFootprintPoints}`
+  );
+}
+
+let carbonFootprintPoints = 0;
+// const numberInHousehold = 2;
+
+//global scope 
+
+
+determineHouseHoldPts(3);
