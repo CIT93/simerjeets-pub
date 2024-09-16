@@ -30,6 +30,7 @@ myHeading.textContent = outputString;
 
 The error is - missing defer */
 
+
 function determineHouseHoldPts(numberInHousehold) {
   // console.log("inside the function");
 
